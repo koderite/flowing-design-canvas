@@ -30,3 +30,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# WordPress theme binaries are fetched by wordpress/build-theme.sh
+wordpress/sandys-theme/assets/fonts/
+wordpress/sandys-theme/assets/images/
+wordpress/sandys-theme/screenshot.png
