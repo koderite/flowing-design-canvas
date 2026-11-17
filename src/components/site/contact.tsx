@@ -54,7 +54,7 @@ export function Contact() {
       <div className="mx-auto flex max-w-[1200px] flex-col gap-16 px-6 lg:flex-row lg:gap-24 lg:px-0">
         <div id="areas" className="flex flex-col gap-[26px] lg:w-[520px] lg:shrink-0">
           <div data-reveal className="flex items-center gap-3">
-            <span className="h-px w-7 shrink-0 bg-clay" />
+            <span className="h-px w-7 shrink-0 bg-brand" />
             <span className="eyebrow text-ink-muted">Get in touch</span>
           </div>
           <h2
@@ -73,13 +73,13 @@ export function Contact() {
           <div data-reveal style={delay(240)} className="max-w-[460px] pt-1.5">
             <Row label="Phone">
               <span className="font-medium">
-                <a href={PHONE_TEL} className="transition-colors hover:text-clay">{PHONE}</a>
+                <a href={PHONE_TEL} className="transition-colors hover:text-brand">{PHONE}</a>
                 <span className="mx-2 text-ink-faint">·</span>
-                <a href={LANDLINE_TEL} className="transition-colors hover:text-clay">{LANDLINE}</a>
+                <a href={LANDLINE_TEL} className="transition-colors hover:text-brand">{LANDLINE}</a>
               </span>
             </Row>
             <Row label="Email">
-              <a href={`mailto:${EMAIL}`} className="break-all transition-colors hover:text-clay">{EMAIL}</a>
+              <a href={`mailto:${EMAIL}`} className="break-all transition-colors hover:text-brand">{EMAIL}</a>
             </Row>
             <Row label="Depot">
               Royal Oak House, 2 Worminghall Road,
@@ -89,7 +89,7 @@ export function Contact() {
             <Row label="Hours" last>
               Weekdays 8am to 6pm · Sat 8am to 1pm
               <br />
-              <span className="text-clay">Emergency callouts 24/7</span>
+              <span className="text-brand">Emergency callouts 24/7</span>
             </Row>
           </div>
           <div data-reveal style={delay(320)} className="flex flex-col gap-[18px] pt-3.5">
@@ -158,7 +158,7 @@ export function Contact() {
                 className="field h-[104px] resize-none p-3.5 leading-[22px]"
               />
             </label>
-            <button type="submit" disabled={sending} className="btn-pill btn-clay h-[52px] w-full text-sm disabled:opacity-80">
+            <button type="submit" disabled={sending} className="btn-pill btn-amber h-[52px] w-full text-sm disabled:opacity-80">
               {sending ? (
                 <span className="flex items-center gap-2">
                   <span className="size-3.5 animate-spin rounded-pill border-2 border-surface/40 border-t-surface" />
@@ -182,13 +182,13 @@ export function Contact() {
           >
             {sent && (
               <>
-                <span className="flex size-14 items-center justify-center rounded-pill bg-clay text-surface animate-in zoom-in-50 duration-700">
+                <span className="flex size-14 items-center justify-center rounded-pill bg-brand text-surface animate-in zoom-in-50 duration-700">
                   <CheckIcon width={20} height={20} />
                 </span>
                 <h3 className="font-display text-[34px] leading-10 text-ink">Thanks, we’ve got it.</h3>
                 <p className="max-w-[320px] text-sm leading-6 text-ink-muted">
                   Sandy or one of the crew will be in touch within the hour. If water is coming in, call{" "}
-                  <a href={PHONE_TEL} className="font-medium text-clay">{PHONE}</a>.
+                  <a href={PHONE_TEL} className="font-medium text-brand">{PHONE}</a>.
                 </p>
                 <button
                   type="button"

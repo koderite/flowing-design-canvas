@@ -27,7 +27,7 @@ export function Hero() {
       <div className="mx-auto flex min-h-[calc(100svh-124px)] max-w-[1200px] flex-col justify-end gap-14 px-6 pt-24 lg:h-[780px] lg:min-h-0 lg:px-0">
         <div className="flex max-w-[660px] flex-col gap-7">
           <div className="intro-fade flex items-center gap-2.5" style={delay(100)}>
-            <span className="pulse-dot size-1.5 rounded-pill bg-clay" />
+            <span className="pulse-dot size-1.5 rounded-pill bg-amber" />
             <span className="eyebrow tracking-[0.2em] text-on-dark-muted">Bicester · Oxfordshire · 24/7</span>
           </div>
 
@@ -36,7 +36,7 @@ export function Hero() {
               <span style={delay(200)}>Blocked drains,</span>
             </span>
             <span className="line-mask">
-              <span className="text-clay-soft italic" style={delay(340)}>
+              <span className="text-amber italic" style={delay(340)}>
                 sorted properly.
               </span>
             </span>
@@ -48,7 +48,7 @@ export function Hero() {
           </p>
 
           <div className="intro-fade flex flex-wrap items-center gap-3.5" style={delay(700)}>
-            <a href="#contact" className="btn-pill btn-clay h-[54px] px-[30px] text-sm">
+            <a href="#contact" className="btn-pill btn-amber h-[54px] px-[30px] text-sm">
               Get a free quote <ArrowRight className="btn-arrow" />
             </a>
             <a href={PHONE_TEL} className="btn-pill btn-ghost-dark h-[54px] px-[26px] text-sm">

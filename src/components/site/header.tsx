@@ -13,7 +13,7 @@ export function TopBar() {
   return (
     <div className="bg-ink-deep">
       <div className="mx-auto flex h-11 max-w-[1200px] items-center justify-between gap-6 px-6 lg:px-0">
-        <div className="flex items-center gap-2 text-clay-soft">
+        <div className="flex items-center gap-2 text-amber">
           <ShieldIcon />
           <span className="eyebrow tracking-[0.12em] text-on-dark-muted">
             WaterSafe approved <span className="hidden sm:inline">&amp; CHAS accredited</span>
@@ -25,7 +25,7 @@ export function TopBar() {
           </span>
           <a href={PHONE_TEL} className="group flex items-center gap-2">
             <span className="eyebrow hidden tracking-[0.12em] text-on-dark-faint sm:inline">24/7 callout</span>
-            <span className="text-xs font-medium text-on-dark transition-colors group-hover:text-clay-soft">
+            <span className="text-xs font-medium text-on-dark transition-colors group-hover:text-amber">
               {PHONE}
             </span>
           </a>
@@ -81,7 +81,7 @@ export function Header() {
           <a href={PHONE_TEL} className="text-[13px] text-ink-muted transition-colors hover:text-ink">
             {PHONE}
           </a>
-          <a href="#contact" className="btn-pill btn-clay h-[42px] px-[22px] text-[13px] tracking-[0.01em]">
+          <a href="#contact" className="btn-pill btn-amber h-[42px] px-[22px] text-[13px] tracking-[0.01em]">
             Get a quote
           </a>
         </div>
@@ -126,13 +126,13 @@ export function Header() {
               style={{ transitionDelay: open ? `${80 + i * 60}ms` : "0ms" }}
             >
               {n.label}
-              <ArrowRight className="text-clay" />
+              <ArrowRight className="text-brand" />
             </a>
           ))}
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="btn-pill btn-clay mt-8 h-[54px] text-sm"
+            className="btn-pill btn-amber mt-8 h-[54px] text-sm"
           >
             Get a free quote <ArrowRight className="btn-arrow" />
           </a>

@@ -48,10 +48,11 @@
   --color-ink-deep: var(--ink-deep);
   --color-ink-muted: var(--ink-muted);
   --color-ink-faint: var(--ink-faint);
-  --color-clay: var(--clay);
-  --color-clay-deep: var(--clay-deep);
-  --color-clay-soft: var(--clay-soft);
-  --color-clay-wash: var(--clay-wash);
+  --color-brand: var(--brand);
+  --color-brand-wash: var(--brand-wash);
+  --color-amber: var(--amber);
+  --color-amber-deep: var(--amber-deep);
+  --color-on-amber: var(--on-amber);
   --color-hairline: var(--hairline);
   --color-on-dark: var(--on-dark);
   --color-on-dark-muted: var(--on-dark-muted);
@@ -63,24 +64,26 @@
 :root {
   --radius: 0.375rem;
 
-  --ground: oklch(0.955 0.01 85);
-  --surface: oklch(0.984 0.004 90);
-  --field: oklch(0.99 0.003 90);
-  --field-line: oklch(0.875 0.017 85);
-  --ink: oklch(0.215 0.01 165);
-  --ink-deep: oklch(0.165 0.008 170);
-  --ink-muted: oklch(0.47 0.012 155);
-  --ink-faint: oklch(0.58 0.022 80);
-  --clay: oklch(0.54 0.12 45);
-  --clay-deep: oklch(0.47 0.115 42);
-  --clay-soft: oklch(0.76 0.1 55);
-  --clay-wash: oklch(0.925 0.022 60);
-  --hairline: oklch(0.885 0.015 85);
-  --on-dark: oklch(0.984 0.004 90);
-  --on-dark-muted: oklch(0.81 0.01 130);
-  --on-dark-faint: oklch(0.6 0.014 150);
-  --on-dark-line: oklch(1 0 0 / 0.14);
-  --scrim: oklch(0.13 0.008 170);
+  /* Palette from the original sandysplumbing.co.uk: navy bar, sky blue headings, amber buttons */
+  --ground: oklch(0.968 0.004 240);
+  --surface: oklch(1 0 0);
+  --field: oklch(1 0 0);
+  --field-line: oklch(0.87 0.012 240);
+  --ink: oklch(0.25 0.035 250);
+  --ink-deep: oklch(0.29 0.09 255);
+  --ink-muted: oklch(0.47 0.02 250);
+  --ink-faint: oklch(0.6 0.018 245);
+  --brand: oklch(0.55 0.11 245);
+  --brand-wash: oklch(0.945 0.022 240);
+  --amber: oklch(0.79 0.165 70);
+  --amber-deep: oklch(0.73 0.16 62);
+  --on-amber: oklch(0.29 0.09 255);
+  --hairline: oklch(0.905 0.008 240);
+  --on-dark: oklch(0.99 0.003 240);
+  --on-dark-muted: oklch(0.85 0.025 240);
+  --on-dark-faint: oklch(0.7 0.045 245);
+  --on-dark-line: oklch(1 0 0 / 0.16);
+  --scrim: oklch(0.2 0.07 258);
 
   --background: var(--ground);
   --foreground: var(--ink);
@@ -88,34 +91,34 @@
   --card-foreground: var(--ink);
   --popover: var(--surface);
   --popover-foreground: var(--ink);
-  --primary: var(--clay);
-  --primary-foreground: var(--surface);
-  --secondary: var(--clay-wash);
+  --primary: var(--amber);
+  --primary-foreground: var(--on-amber);
+  --secondary: var(--brand-wash);
   --secondary-foreground: var(--ink);
   --muted: var(--ground);
   --muted-foreground: var(--ink-muted);
-  --accent: var(--clay-wash);
+  --accent: var(--brand-wash);
   --accent-foreground: var(--ink);
   --destructive: oklch(0.577 0.2 27);
   --destructive-foreground: var(--surface);
   --border: var(--hairline);
   --input: var(--field-line);
-  --ring: var(--clay);
+  --ring: var(--brand);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
   --hero-scrim: linear-gradient(
     in oklab 100deg,
-    oklch(0.13 0.008 170 / 0.95) 0%,
-    oklch(0.13 0.008 170 / 0.86) 34%,
-    oklch(0.13 0.008 170 / 0.35) 66%,
-    oklch(0.13 0.008 170 / 0.6) 100%
+    oklch(0.2 0.07 258 / 0.95) 0%,
+    oklch(0.2 0.07 258 / 0.86) 34%,
+    oklch(0.2 0.07 258 / 0.35) 66%,
+    oklch(0.2 0.07 258 / 0.6) 100%
   );
   --band-scrim: linear-gradient(
     in oklab 95deg,
-    oklch(0.13 0.008 170 / 0.95) 0%,
-    oklch(0.13 0.008 170 / 0.8) 45%,
-    oklch(0.13 0.008 170 / 0.45) 100%
+    oklch(0.2 0.07 258 / 0.95) 0%,
+    oklch(0.2 0.07 258 / 0.8) 45%,
+    oklch(0.2 0.07 258 / 0.45) 100%
   );
 }
 
@@ -135,8 +138,8 @@
     font-synthesis: none;
   }
   ::selection {
-    background: var(--clay);
-    color: var(--surface);
+    background: var(--amber);
+    color: var(--on-amber);
   }
 }
 
@@ -185,7 +188,7 @@
     transform: scale(0.97);
   }
   &:focus-visible {
-    outline: 2px solid var(--clay-soft);
+    outline: 2px solid var(--amber);
     outline-offset: 3px;
   }
   & .btn-arrow {
@@ -196,15 +199,15 @@
   }
 }
 
-@utility btn-clay {
-  background: var(--clay);
-  color: var(--surface);
-  box-shadow: 0 10px 30px -14px color-mix(in oklab, var(--clay) 70%, transparent);
+@utility btn-amber {
+  background: var(--amber);
+  color: var(--on-amber);
+  box-shadow: 0 10px 30px -14px color-mix(in oklab, var(--amber-deep) 80%, transparent);
   &::before {
-    background: var(--clay-deep);
+    background: var(--amber-deep);
   }
   &:hover {
-    box-shadow: 0 16px 36px -14px color-mix(in oklab, var(--clay) 80%, transparent);
+    box-shadow: 0 16px 36px -14px color-mix(in oklab, var(--amber-deep) 90%, transparent);
   }
 }
 
@@ -224,7 +227,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--clay);
+  color: var(--brand);
   font-weight: 500;
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px;
@@ -252,7 +255,7 @@
     right: 0;
     bottom: -6px;
     height: 1px;
-    background: var(--clay);
+    background: var(--brand);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s var(--ease-out-expo);
@@ -272,7 +275,7 @@
   &[data-scrolled="true"] {
     background-color: color-mix(in oklab, var(--ground) 82%, transparent);
     backdrop-filter: blur(14px) saturate(1.4);
-    box-shadow: 0 1px 0 var(--hairline), 0 12px 32px -24px oklch(0.2 0.01 165 / 0.4);
+    box-shadow: 0 1px 0 var(--hairline), 0 12px 32px -24px oklch(0.29 0.09 255 / 0.35);
   }
 }
 
@@ -312,14 +315,14 @@
       transform: scaleY(1);
     }
     &:hover .service-num {
-      color: var(--clay);
+      color: var(--brand);
     }
     &:hover .service-title {
       transform: translateX(10px);
     }
     &:hover .service-cta {
-      background: var(--clay);
-      border-color: var(--clay);
+      background: var(--brand);
+      border-color: var(--brand);
       color: var(--surface);
     }
     &:hover .service-cta svg {
@@ -348,8 +351,8 @@
   }
   &:focus {
     outline: none;
-    border-color: var(--clay);
-    box-shadow: 0 0 0 4px color-mix(in oklab, var(--clay) 14%, transparent);
+    border-color: var(--brand);
+    box-shadow: 0 0 0 4px color-mix(in oklab, var(--brand) 14%, transparent);
     background: var(--surface);
   }
   &[aria-invalid="true"] {

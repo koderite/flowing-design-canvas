@@ -62,7 +62,7 @@ export function Logo(props: P) {
       <circle cx="13" cy="13" r="12" className="stroke-ink" />
       <path
         d="M13 5.5c2.4 3.1 4.4 5.4 4.4 8a4.4 4.4 0 1 1-8.8 0c0-2.6 2-4.9 4.4-8Z"
-        className="stroke-clay"
+        className="stroke-brand"
         strokeWidth="1.2"
       />
     </svg>

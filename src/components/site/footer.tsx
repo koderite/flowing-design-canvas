@@ -21,7 +21,7 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end lg:gap-20">
           <div data-reveal className="flex flex-col gap-3">
             <span className="font-display text-[52px] leading-[54px] tracking-[-0.02em] text-on-dark">
-              Sandy’s<span className="text-clay-soft">.</span>
+              Sandy’s<span className="text-amber">.</span>
             </span>
             <span className="text-[13px] text-on-dark-faint">
               Plumbing &amp; Drainage · Bicester &amp; north Oxfordshire
@@ -32,7 +32,7 @@ export function Footer() {
               <span className="text-[10px] leading-3 font-medium tracking-[0.18em] text-on-dark-faint uppercase">
                 24/7 emergency
               </span>
-              <a href={PHONE_TEL} className="font-display text-[30px] leading-8 text-on-dark transition-colors hover:text-clay-soft">
+              <a href={PHONE_TEL} className="font-display text-[30px] leading-8 text-on-dark transition-colors hover:text-amber">
                 {PHONE}
               </a>
             </div>
@@ -80,7 +80,7 @@ export function Footer() {
               <span className={item}>Weekdays · 8am to 6pm</span>
               <span className={item}>Saturday · 8am to 1pm</span>
               <span className={item}>Sunday · emergencies only</span>
-              <span className="text-sm leading-7 text-clay-soft">24/7 emergency line</span>
+              <span className="text-sm leading-7 text-amber">24/7 emergency line</span>
             </Col>
           </div>
         </div>

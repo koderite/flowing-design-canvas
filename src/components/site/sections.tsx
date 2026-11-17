@@ -8,7 +8,7 @@ import { delay } from "./use-reveal";
 function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <div data-reveal className={`flex items-center gap-3 ${className}`}>
-      <span className="h-px w-7 shrink-0 bg-clay" />
+      <span className="h-px w-7 shrink-0 bg-brand" />
       <span className="eyebrow text-ink-muted">{children}</span>
     </div>
   );
@@ -21,7 +21,7 @@ export function Intro() {
     <section id="about" className="bg-surface py-20 lg:py-[104px]">
       <div className={`${container} flex flex-col gap-10 lg:flex-row lg:gap-20`}>
         <div data-reveal className="flex w-[200px] shrink-0 flex-col gap-3.5 pt-2.5">
-          <span className="h-px w-7 bg-clay" />
+          <span className="h-px w-7 bg-brand" />
           <span className="eyebrow text-ink-muted">
             The local
             <br />
@@ -148,7 +148,7 @@ export function Mains() {
               style={delay(220 + i * 80)}
               className="flex items-center gap-3.5 border-b border-hairline py-3.5 text-sm text-ink"
             >
-              <CheckIcon className="text-clay" />
+              <CheckIcon className="text-brand" />
               {p}
             </li>
           ))}
@@ -176,7 +176,7 @@ export function Emergency() {
       <div className={`${container} flex flex-col justify-between gap-12 py-20 lg:h-[460px] lg:flex-row lg:items-center lg:py-0`}>
         <div className="flex max-w-[640px] flex-col gap-5">
           <div data-reveal className="flex items-center gap-2.5">
-            <span className="pulse-dot size-1.5 rounded-pill bg-clay-soft" />
+            <span className="pulse-dot size-1.5 rounded-pill bg-amber" />
             <span className="eyebrow tracking-[0.2em] text-on-dark-muted">Emergency callout · 24 hours</span>
           </div>
           <h2
@@ -186,18 +186,18 @@ export function Emergency() {
           >
             Water where it shouldn’t be?
             <br />
-            <span className="text-clay-soft italic">We’ll be there today.</span>
+            <span className="text-amber italic">We’ll be there today.</span>
           </h2>
         </div>
         <div data-reveal style={delay(200)} className="flex flex-col gap-5 lg:items-end">
           <span className="eyebrow text-on-dark-faint">Call the crew direct</span>
           <a
             href={PHONE_TEL}
-            className="font-display text-[38px] leading-10 text-on-dark transition-colors duration-500 hover:text-clay-soft"
+            className="font-display text-[38px] leading-10 text-on-dark transition-colors duration-500 hover:text-amber"
           >
             {PHONE}
           </a>
-          <a href="#contact" className="btn-pill btn-clay h-[52px] self-start px-7 text-sm lg:self-auto">
+          <a href="#contact" className="btn-pill btn-amber h-[52px] self-start px-7 text-sm lg:self-auto">
             Request a callout <ArrowRight className="btn-arrow" />
           </a>
         </div>
@@ -252,7 +252,7 @@ export function Process() {
                 style={delay(200 + i * 260)}
                 className="absolute inset-x-0 top-0 h-px bg-ink"
               />
-              <span data-reveal style={delay(260 + i * 160)} className="eyebrow tracking-[0.16em] text-clay">
+              <span data-reveal style={delay(260 + i * 160)} className="eyebrow tracking-[0.16em] text-brand">
                 0{i + 1}
                 <span className="ml-3">{s.tag}</span>
               </span>
@@ -290,7 +290,7 @@ export function Reviews() {
             </h2>
           </div>
           <div data-reveal style={delay(160)} className="flex flex-col gap-2 lg:items-end">
-            <div className="flex items-center gap-1.5 text-clay" aria-label="Rated 4.9 out of 5">
+            <div className="flex items-center gap-1.5 text-brand" aria-label="Rated 4.9 out of 5">
               {Array.from({ length: 5 }).map((_, i) => (
                 <StarIcon key={i} />
               ))}
@@ -303,7 +303,7 @@ export function Reviews() {
           <figure className="relative flex flex-col gap-[26px] pt-[34px] lg:w-[540px] lg:shrink-0">
             <span className="absolute inset-x-0 top-0 h-px bg-hairline" />
             <span data-reveal="line" className="absolute inset-x-0 top-0 h-px bg-ink" />
-            <span data-reveal className="h-6 font-display text-[60px] leading-[34px] text-clay" aria-hidden>
+            <span data-reveal className="h-6 font-display text-[60px] leading-[34px] text-brand" aria-hidden>
               “
             </span>
             <blockquote
@@ -315,7 +315,7 @@ export function Reviews() {
               price that afternoon, new pipe in and the drive reinstated in two days. Faultless.
             </blockquote>
             <figcaption data-reveal style={delay(200)} className="flex items-center gap-3">
-              <span className="flex size-[38px] items-center justify-center rounded-pill bg-clay-wash text-[11px] font-medium tracking-[0.06em] text-clay">
+              <span className="flex size-[38px] items-center justify-center rounded-pill bg-brand-wash text-[11px] font-medium tracking-[0.06em] text-brand">
                 RH
               </span>
               <span className="flex flex-col gap-0.5">
