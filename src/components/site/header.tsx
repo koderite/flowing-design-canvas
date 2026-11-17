@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { EMAIL, PHONE, PHONE_TEL } from "@/lib/site";
-import { ArrowRight, Logo, PhoneIcon, ShieldIcon } from "./icons";
+import logoImg from "@/assets/sandys-logo.png.asset.json";
+import { ArrowRight, PhoneIcon, ShieldIcon } from "./icons";
 
 const NAV = [
   { label: "Services", href: "#services" },
@@ -60,13 +61,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6 lg:px-0">
         <a href="#top" className="group flex items-center gap-3.5" aria-label="Sandy’s Plumbing & Drainage, home">
-          <Logo className="transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:rotate-[20deg]" />
-          <span className="flex flex-col gap-px">
-            <span className="font-display text-[27px] leading-7 tracking-[-0.01em] text-ink">Sandy’s</span>
-            <span className="text-[9px] leading-3 font-medium tracking-[0.22em] text-ink-muted uppercase">
-              Plumbing &amp; Drainage
-            </span>
-          </span>
+          <img src={logoImg.url} alt="Sandy’s Plumbing" width={412} height={100} className="h-8 w-auto transition-opacity duration-500 group-hover:opacity-80 lg:h-9" />
         </a>
 
         <nav className="hidden items-center gap-9 lg:flex" aria-label="Main">
