@@ -26,11 +26,6 @@ export function Hero() {
 
       <div className="mx-auto flex min-h-[calc(100svh-124px)] max-w-[1200px] flex-col justify-end gap-14 px-6 pt-24 lg:h-[780px] lg:min-h-0 lg:px-0">
         <div className="flex max-w-[660px] flex-col gap-7">
-          <div className="intro-fade flex items-center gap-2.5" style={delay(100)}>
-            <span className="pulse-dot size-1.5 rounded-pill bg-amber" />
-            <span className="eyebrow tracking-[0.2em] text-on-dark-muted">Bicester · Oxfordshire · 24/7</span>
-          </div>
-
           <h1 className="font-display text-[56px] leading-[0.98] tracking-[-0.025em] text-on-dark sm:text-[72px] lg:text-[88px] lg:leading-[88px]">
             <span className="line-mask">
               <span style={delay(200)}>Blocked drains,</span>
