@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Landing page sections live in `src/components/site/`, with shared business details in `src/lib/site.ts`; keeps copy and contact info in one place.
+- Scroll reveals use `data-reveal` attributes observed once by `useRevealOnScroll` on the page, with styles in `src/styles.css`; avoids a motion library and keeps animation CSS-driven.
